@@ -1,0 +1,41 @@
+.TextContainer{
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    justify-content: center;
+    background-color: white;
+    padding: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    box-shadow: 4px 4px 20px gray;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.Content{
+    color: black;
+    display: flex;
+    font-family: "Roboto",sans-serif;
+    font-size: medium;
+}
+
+.DateTime{
+    font-size: medium;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

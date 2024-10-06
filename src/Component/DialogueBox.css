@@ -1,0 +1,146 @@
+.DialogueBox{
+    display: flex;
+    flex-direction: column;
+    padding : 1em;
+    gap : 1em;
+    justify-content: center;
+    background-color: white;
+    height: 30vh;
+    width : 35vw;
+    border-radius: 5px;
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    box-shadow : 8px 8px 30px rgb(69, 68, 68);
+}
+.box{
+    height : 25%;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.InputContainer{
+    display: flex;
+    gap : 15px;
+    align-items: center;
+}
+.InputContainer label{
+    font-size: 1.38em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+.InputContainer input{
+    flex-grow: 1;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    height:2em
+}
+.ColorContainer{
+    display: flex;
+    gap : 4px;
+    align-items: center;
+}
+.ColorContainer label{
+    font-size: 1.38em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+.color-options{
+    display: flex;
+    flex-grow: 1;
+    padding-left: 15px;
+    gap:1em;
+}
+
+.color-options button{
+    height : 2.2em;
+    width : 2.2em;
+    border-radius: 50%;
+    border: white;
+    transition: all 0.3s ease-in-out;
+}
+.color-options button:hover{
+    border: 1px solid black;
+}
+.color-options .selectedCol{
+    border: 1px solid black;
+    scale: 1.2;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.buttonContainer button{
+    height: 70%;
+    width : 30%;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    font-size: medium;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.3s ease-out;
+
+}
+.buttonContainer button:hover{
+    background-color: blue;
+    border: 3px solid darkblue ;
+    font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .DialogueBox{
+        width: 70vw;
+        height: 20vh;
+        left: 10%;
+    }
+    .heading{
+        align-items: start;
+        justify-content: start;
+    }
+    .InputContainer label{
+        width: 35%;
+        font-size: 1.1em;
+    }
+    .buttonContainer button{
+        width : 70%;
+        background-color: darkblue;
+        color: white;
+    
+    }
+    .InputContainer input{
+        padding-left: 5px;
+        font-size: 0.7em;
+        height:2em
+    }
+    .InputContainer{
+        gap : 8px;
+    }
+
+    .color-options{
+        padding-left: 8px;
+        gap:0.5em;
+        padding-right: 8px;
+    }
+    .color-options button{
+        height : 1.5em;
+        width : 1.5em;
+        border-radius: 50%;
+        border: white;
+        transition: all 0.3s ease-in-out;
+    }
+    .ColorContainer label{
+        width: 45%;
+        font-size: 1.1em;
+    }
+  }
